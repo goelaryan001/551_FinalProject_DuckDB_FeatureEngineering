@@ -58,11 +58,12 @@ The system simulates a realistic data pipeline where transactional data is trans
 
 ### 1. Clone the repository
 
-```bash
+bash:
 git clone <your-repo-link>
 cd <repo-name>
 
-2. Create a virtual environment
+### 2. Create a virtual environment
+
 macOS / Linux
 python3 -m venv venv
 source venv/bin/activate
@@ -75,26 +76,26 @@ Windows (CMD)
 python -m venv venv
 venv\Scripts\activate
 
-3. Install dependencies
+### 3. Install dependencies
 pip install -r requirements.txt
 
 If needed:
 
 pip install duckdb pandas numpy streamlit pyarrow
 
-▶️ How to Run the Project:
+## ▶️ How to Run the Project:
 
-Step 1: Generate dataset
+### Step 1: Generate dataset
 python src/generate_data.py
 
 Creates: raw_data/transactions.csv
 
-Step 2: Load data into DuckDB
+### Step 2: Load data into DuckDB
 python src/setup_db.py
 
 Creates: data/feature_engineering.duckdb
 
-Step 3: Run feature queries
+### Step 3: Run feature queries
 python src/run_features.py
 
 Outputs:
@@ -102,15 +103,15 @@ Feature results
 Execution plan
 Query profiling
 
-Step 4: Build feature table
+### Step 4: Build feature table
 python src/build_feature_table.py
 
-Step 5: Run experiments
+### Step 5: Run experiments
 python src/benchmark_queries.py
 
 Creates: outputs/benchmark_results.csv
 
-Step 6: Launch Streamlit app
+### Step 6: Launch Streamlit app
 streamlit run app/streamlit_app.py
 
 Open:
@@ -119,7 +120,7 @@ http://localhost:8501
 
 This project simulates a feature engineering pipeline over transactional data.
 
-Features Computed:
+## Features Computed:
 Total transaction value
 Transaction count
 Average transaction amount
@@ -128,16 +129,16 @@ Merchant diversity
 Category diversity
 User activity (time-based)
 
-🧩 DuckDB Internals Explored
-Columnar Storage: DuckDB scans only required columns (column pruning).
+## 🧩 DuckDB Internals Explored
+### Columnar Storage: DuckDB scans only required columns (column pruning).
 
-Vectorized Execution: DuckDB processes data in batches using operators such as:
+### Vectorized Execution: DuckDB processes data in batches using operators such as:
 
 SEQ_SCAN
 HASH_GROUP_BY
 TOP_N
 
-🧪 Experiments Conducted
+## 🧪 Experiments Conducted
 
 1. Narrow aggregation queries
 2. Full table scans
@@ -145,7 +146,7 @@ TOP_N
 4. Multi-column aggregation
 5. Point lookup queries
 
-📊 Key Observations
+## 📊 Key Observations
 
 Narrow queries are significantly faster than wide queries
 DuckDB avoids scanning unnecessary columns
