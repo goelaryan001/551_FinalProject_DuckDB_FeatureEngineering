@@ -20,25 +20,25 @@ The system simulates a realistic data pipeline where transactional data is trans
 ---
 
 ## 📁 Project Structure
-├── app/
-│ └── streamlit_app.py
-├── data/
-│ └── feature_engineering.duckdb
-├── raw_data/
-│ └── transactions.csv
-├── outputs/
-│ ├── benchmark_results.csv
-│ ├── explain_user_features.txt
-│ ├── user_features_top10.csv
-│ └── user_features_top20.csv
-├── src/
-│ ├── generate_data.py
-│ ├── setup_db.py
-│ ├── run_features.py
-│ ├── build_feature_table.py
-│ └── benchmark_queries.py
-├── requirements.txt
-└── README.md
+├── app/ <br>
+│ └── streamlit_app.py <br>
+├── data/<br>
+│ └── feature_engineering.duckdb<br>
+├── raw_data/<br>
+│ └── transactions.csv<br>
+├── outputs/<br>
+│ ├── benchmark_results.csv<br>
+│ ├── explain_user_features.txt<br>
+│ ├── user_features_top10.csv<br>
+│ └── user_features_top20.csv<br>
+├── src/<br>
+│ ├── generate_data.py<br>
+│ ├── setup_db.py<br>
+│ ├── run_features.py<br>
+│ ├── build_feature_table.py<br>
+│ └── benchmark_queries.py<br>
+├── requirements.txt<br>
+└── README.md<br>
 
 
 ---
