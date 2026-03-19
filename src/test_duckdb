@@ -1,0 +1,5 @@
+import duckdb
+
+con = duckdb.connect()
+result = con.execute("SELECT 1 + 1 AS answer").fetchall()
+print(result)

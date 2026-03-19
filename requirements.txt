@@ -1,0 +1,9 @@
+numpy
+pandas
+duckdb
+pyarrow
+scikit-learn
+matplotlib
+jupyter
+pathlib
+streamlit

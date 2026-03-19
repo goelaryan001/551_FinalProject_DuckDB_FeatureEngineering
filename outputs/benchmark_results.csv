@@ -1,0 +1,6 @@
+query_name,avg_seconds,row_count
+narrow_aggregation,0.002329,5000
+wide_scan,0.083707,100000
+selective_filter,0.002906,1993
+multi_column_groupby,0.001849,30
+point_lookup,0.00086,18
